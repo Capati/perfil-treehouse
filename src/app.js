@@ -6,12 +6,18 @@ var express = require("express");
 var path = require("path");
 var app = express();
 
+// Importando rotas
+var routes = require("./routes/index");
+
 // Configurnado o view engine
 app.set("view engine", "jade");
 app.set("views", path.join(__dirname,"/views"));
 
 // Servindo arquivos estáticos
 app.use(express.static(path.join(__dirname, "public")));
+
+// Definindo as rotas
+app.use("/", routes);
 
 // Diretório root do site
 app.get("/", function (req, res) {
@@ -22,3 +28,5 @@ app.get("/", function (req, res) {
 var servidor = app.listen(3000, function () {
   console.log("Servidor iniciado em: localhost:3000");
 });
+
+module.exports = app;
