@@ -3,7 +3,13 @@
 
 // Carregando e definindo módulos principais
 var express = require("express");
+var path = require("path");
 var app = express();
+
+// Configurnado o view engine
+app.set("view engine", "jade");
+app.set("views", path.join(__dirname,"/views"));
+
 
 // Diretório root do site
 app.get("/", function (req, res) {
