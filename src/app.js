@@ -29,4 +29,8 @@ var servidor = app.listen(3000, function () {
   console.log("Servidor iniciado em: localhost:3000");
 });
 
+if (app.get("env") === "development") {
+  app.locals.pretty = true;
+}
+
 module.exports = app;

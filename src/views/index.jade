@@ -1,4 +1,8 @@
 extends layout
 
 block content
-  h1 #{titulo}
+  img(src="/img/buscar.png" alt="Ícone de Lupa" id="iconeBuscar")
+
+  form(action="/perfil" method="POST")
+    input(type="text" placeholder="Digite um nome de usuário" id="usuario" name="usuario")
+    input(type="submit" value="Buscar" id="botaoBuscar")
