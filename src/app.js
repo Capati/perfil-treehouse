@@ -8,6 +8,7 @@ var app = express();
 
 // Importando rotas
 var routes = require("./routes/index");
+var perfil = require("./routes/perfil");
 
 // Configurnado o view engine
 app.set("view engine", "jade");
@@ -18,6 +19,7 @@ app.use(express.static(path.join(__dirname, "public")));
 
 // Definindo as rotas
 app.use("/", routes);
+app.use("/perfil", perfil);
 
 // Diretório root do site
 app.get("/", function (req, res) {

@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  #perfil
+    img(src=gravatar_url alt="Avatar" id="avatar")
+
+    p
+      span @#{profile_name}
+
+    ul
+      li
+        span #{badges} badges
+      li
+        span #{pontosJavaScript} pontos JavaScript
+      li
+        a(href="/") Buscar novamente
