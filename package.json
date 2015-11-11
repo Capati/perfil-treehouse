@@ -1,0 +1,14 @@
+{
+  "name": "perfil_treehouse",
+  "version": "1.0.0",
+  "description": "Exibe o perfil de um estudante da Treehouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rafael_Capati",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
