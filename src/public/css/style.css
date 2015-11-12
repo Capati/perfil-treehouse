@@ -88,6 +88,10 @@ span {
   border: none;
 }
 
+footer.footer p {
+  font-size: .9em;
+}
+
 .erro {
   width: 100%;
   padding: 22px 0;
