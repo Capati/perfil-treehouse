@@ -78,6 +78,12 @@ span {
   background: #5BC33C;
 }
 
+#botaoBuscar[disabled] {
+  background: #CCC;
+  outline-color: none;
+  border: none;
+}
+
 .erro {
   width: 100%;
   padding: 22px 0;
