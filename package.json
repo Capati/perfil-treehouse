@@ -2,9 +2,9 @@
   "name": "perfil_treehouse",
   "version": "1.0.0",
   "description": "Exibe o perfil de um estudante da Treehouse",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Rafael_Capati",
   "license": "ISC",

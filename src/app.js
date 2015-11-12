@@ -6,6 +6,8 @@ var express = require("express");
 var path = require("path");
 var app = express();
 
+app.set("port", (process.env.PORT || 5000));
+
 // Importando rotas
 var routes = require("./routes/index");
 var perfil = require("./routes/perfil");
@@ -27,8 +29,8 @@ app.get("/", function (req, res) {
 });
 
 // Iniciando o servidor
-var servidor = app.listen(3000, function () {
-  console.log("Servidor iniciado em: localhost:3000");
+var servidor = app.listen(app.get("port"), function () {
+  console.log("Servidor iniciado em: " + app.get("port"));
 });
 
 if (app.get("env") === "development") {
