@@ -4,7 +4,7 @@
   "description": "Exibe o perfil de um estudante da Treehouse",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node /src/app.js"
   },
   "author": "Rafael_Capati",
   "license": "ISC",
