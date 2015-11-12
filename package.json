@@ -2,7 +2,7 @@
   "name": "perfil_treehouse",
   "version": "1.0.0",
   "description": "Exibe o perfil de um estudante da Treehouse",
-  "main": "app.js",
+  "main": "/src/app.js",
   "scripts": {
     "start": "node /src/app.js"
   },
